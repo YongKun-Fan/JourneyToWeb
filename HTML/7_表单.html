@@ -1,0 +1,35 @@
+<!--html表单用于收集不同类型的用户输入-->
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <meta charset="UTF-8">
+        <title>表单</title>
+    </head>
+    <body>
+        <h4>模拟用户注册界面</h4>
+        <form action="" method=""> <!--action中为数据传输的目标页面 method数据提交方式，默认为get-->
+            <fieldset style="width: 300px">  <!--带边框-->
+                <legend>个人信息</legend>  <!--边框标题-->
+            姓名：<input type="text" name="name"><br />   <!--文本字段-->
+            密码：<input type="password" name="password"><br />  <!--密码字段-->
+            性别：<input type="radio" name="sex" value="male">男 <!--单选-->
+                  <input type="radio" name="sex" value="female">女<br />
+            年龄：<input type="number" value="20"> <br />
+            爱好：<input type="checkbox" name="interests" value="football">足球  <!--复选-->
+                  <input type="checkbox" name="interests" value="basketball">篮球
+                  <input type="checkbox" name="interests" value="baseball">排球<br />
+            城市：<select name="city">   <!--下拉列表-->
+                <option>北京</option>
+                <option selected>上海</option> <!--预先被选中-->
+                <option>广州</option>
+            </select> 
+            <input type="range" value="50"> <br />
+            <hr />
+            留下你的宝贵意见：<br />
+            <textarea rows="10" cols="40"></textarea><br /> <!--文本域，字数不限-->
+            <input type="submit" value="确认"> <!--提交-->
+            <input type="button" value="重置">  <!--按钮-->
+            </fieldset>
+        </form>
+    </body>
+</html>
