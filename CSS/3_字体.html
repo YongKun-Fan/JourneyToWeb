@@ -4,10 +4,19 @@
         <meta charset="UTF-8">
         <title>字体</title>
         <style>
-            
+            p.serif {font-family:"Times New Roman",Times;  /*font-family指定字体，可以逗号并列多个后备*/
+            font-style: normal;   /*font-style设置字形，斜体或正常*/ 
+            font-size: 40px;      /*font-size设置字体大小,浏览器默认字体大小为：1em=16px*/ 
+            font-weight: lighter;    /*font-weight设置字体粗细：normal/lighter/bold/具体数值*/       
+            }  
+            p.sansserif {font-family: Arial;
+            font-style:italic;
+            font-size: 1em;
+            }
         </style>
     </head>
     <body>
-
+        <p class="serif">这一段的字体是Times New Roman,FT</p>
+        <p class="sansserif">这一段的字体是Arial,FT</p>
     </body>
 </html>
