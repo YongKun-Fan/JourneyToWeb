@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <meta charset="UTF-8">
+        <title>导航栏</title>
+        <style>
+            ul {
+                list-style-type: none;
+                margin: 0px;
+                padding: 0px;
+            }
+            #link {
+                text-decoration: none;
+            }
+            a {
+                display: block;  /*显示块元素的链接，让整体变为可点击链接区域（不只是文本）*/
+                width: 100px;
+                background-color: silver;
+                padding: 6px 12px;
+            }
+            li a:hover {          /*鼠标移动到选项上修改背景颜色*/
+                background-color: black;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li><a id="link" href="#home" style="background-color:springgreen">主页</a></li>
+            <li><a id="link" href="#news international">国际新闻</a></li>
+            <li><a id="link" href="#news domestic">国内新闻</a></li>
+            <li><a id="link" href="#news military">军事新闻</a></li>
+            <li><a id="link" href="#news entertainment">娱乐新闻</a></li>
+        </ul>
+    </body>
+</html>
