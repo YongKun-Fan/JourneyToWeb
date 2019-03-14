@@ -11,21 +11,29 @@
                 list-style-type: none;
                 margin: 0;
                 padding: 0;
-                width: 100%;
+                width: 60%;
                 height: 30px;
                 position:fixed;
                 top: 0;          /*当position为fixed时，消除与浏览器上边距*/
+                left: 20%;
+                right: 20%;
                 background-color: silver;
             }
             li {
-                display: inline;
+                float: left;
                 margin: 0;
-                padding: 1px 20px 1px 0px;
+                border-right: 1px solid white;  
+            }
+            #about {
+                float: right;
+                background-color: rgba(33, 63, 44, 0.199);
             }
             li a {
                 text-decoration: none;
                 font-size: 1.5em;
                 margin: 0;
+                padding: 0px 10px;
+                display: block;
             }
             li a:hover {
                 background-color: black;
@@ -43,6 +51,7 @@
             <li><a id="link3" href="#news domestic">国内新闻</a></li>
             <li><a id="link4" href="#news military">军事新闻</a></li>
             <li><a id="link5" href="#news entertainment">娱乐新闻</a></li>
+            <li id="about"><a id="link6" href="#news about">关于</a></li>
         </ul>
         <div>
             <h2>Fixed Full-height Side Nav</h2>

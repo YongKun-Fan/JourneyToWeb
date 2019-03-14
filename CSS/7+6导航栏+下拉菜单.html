@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <title>导航栏下拉菜单</title>
+    <style>
+        ul {
+            list-style-type: none;
+            overflow: hidden;
+            background-color: green;
+            margin: 0;
+            padding:0;
+            width: 100%;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a, .dropbtn {
+            text-decoration: none;
+            text-align: center;
+            display: inline-block;
+            color: white;
+            padding: 12px 16px;
+        }
+
+        .drop {
+            display: inline-block;
+        }
+        .drop-content {
+            display: none;
+            position: absolute;
+            min-width: 160px;
+
+        }
+
+        .drop-content a {
+            display: block;
+            color: white;
+            padding: 12px 16px;
+            background-color: gray;
+            text-decoration: none;
+        }
+
+        li a:hover{
+            background-color: black;
+        }
+
+        .drop:hover .drop-content {
+            display: block;
+        }
+
+        .drop-content a:hover {
+            background-color: black;
+        }
+
+        .dropbtn:hover {
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body style="margin: 0; border: 0;">
+    <ul>
+        <li><a class="home" href="#">主页</a></li>
+        <li><a classs="news" href="#">新闻</a></li>
+        <div class="drop">
+            <a class="dropbtn" href="#">菜单</a>
+                <div class="drop-content">
+                    <a class="link1" href="#">链接 1</a>
+                    <a class="link2" href="#">链接 2</a>
+                    <a class="link3" href="#">链接 3</a>
+                </div>
+        </div>
+    </ul>
+    <div>
+        <h2>导航栏上的下拉菜单</h2>
+        <p>鼠标移动到“菜单”链接先显示下拉菜单。</p>
+        <p>鼠标移动到“菜单”链接先显示下拉菜单。</p>
+        <p>鼠标移动到“菜单”链接先显示下拉菜单。</p>
+        <p>鼠标移动到“菜单”链接先显示下拉菜单。</p>
+        <p>鼠标移动到“菜单”链接先显示下拉菜单。</p>
+        <p>鼠标移动到“菜单”链接先显示下拉菜单。</p>
+        <p>鼠标移动到“菜单”链接先显示下拉菜单。</p>
+        <p>鼠标移动到“菜单”链接先显示下拉菜单。</p>
+        <p>鼠标移动到“菜单”链接先显示下拉菜单。</p>
+        <p>鼠标移动到“菜单”链接先显示下拉菜单。</p>
+        <p>鼠标移动到“菜单”链接先显示下拉菜单。</p>
+        <p>鼠标移动到“菜单”链接先显示下拉菜单。</p>
+        <p>鼠标移动到“菜单”链接先显示下拉菜单。</p>
+        <p>鼠标移动到“菜单”链接先显示下拉菜单。</p>
+        <p>鼠标移动到“菜单”链接先显示下拉菜单。</p>
+        <p>鼠标移动到“菜单”链接先显示下拉菜单。</p>
+        <p>鼠标移动到“菜单”链接先显示下拉菜单。</p>
+        <p>鼠标移动到“菜单”链接先显示下拉菜单。</p>
+        <p>鼠标移动到“菜单”链接先显示下拉菜单。</p>
+    </div>
+</body>
+
+</html>
