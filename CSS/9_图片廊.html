@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <title>图片廊</title>
+    <style>
+        div.img {
+            margin: 5px;
+            border: 1px solid #ccc;
+            float: left;
+            width: 180px;
+        }
+
+        div.img img {
+            width: 100%;
+            height: auto;
+            opacity: 0.4;     /*为图片添加透明度*/
+            filter: alpha(opacity=40);
+        }
+
+        div.img:hover {
+            border: 1px solid #777;
+        }
+
+        div.img img:hover {
+            opacity: 1.0;
+            filter: alpha(opacity=100);
+        }
+
+        div.desc {
+            padding: 15px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="responsive">
+        <div class="img">
+            <a target="-blank" href="#">
+                <img src="img_fjords.jpg" alt="图片文本描述" width="300" height="200">
+            </a>
+            <div class="desc">img_fjords</div>
+        </div>
+    </div>
+
+    <div class="responsive">
+        <div class="img">
+            <a target="-blank" href="#">
+                <img src="img_forest.jpg" alt="图片文本描述" width="300" height="200">
+            </a>
+            <div class="desc">img_forest</div>
+        </div>
+    </div>
+
+    <div class="responsive">
+        <div class="img">
+            <a target="-blank" href="#">
+                <img src="img_lights.jpg" alt="图片文本描述" width="300" height="200">
+            </a>
+            <div class="desc">img_lights</div>
+        </div>
+    </div>
+
+    <div class="responsive">
+        <div class="img">
+            <a target="-blank" href="#">
+                <img src="img_mountains.jpg" alt="图片文本描述" width="300" height="200">
+            </a>
+            <div class="desc">img_mountains</div>
+        </div>
+    </div>
+</body>
+
+</html>

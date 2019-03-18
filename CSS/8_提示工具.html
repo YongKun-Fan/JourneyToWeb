@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <meta charset="UTF-8">
+        <title>提示工具</title>
+    </head>
+    <style>
+        .tooltip {
+            position: relative;
+            display: inline-block;
+            border-bottom: 1px dotted black;
+        }
+
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 120px;
+            background-color: black;
+            color: #FFF;
+            text-align: center;
+            padding: 5px 0;
+            border-radius: 6px;   /*为提示框添加圆角*/
+            position: absolute;   /*absolute元素的位置相对于最近的已定位父元素，和其他元素重叠*/
+            z-index: 1;  /*重叠顺序*/
+        }
+
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+        }
+    </style>
+    <body>
+        <div class="tooltip">  <!--容器元素添加“tooltip”类，鼠标移动其上时显示提示信息-->
+            鼠标移到这里来
+            <span class="tooltiptext">提示文本</span>  <!--提示文本放在内联元素上，并用“tooltiptxt”类-->
+        </div>
+        啦啦啦
+        <div>另一部分内容</div>
+        <div>这也是另一部分内容</div>
+    </body>
+</html>
