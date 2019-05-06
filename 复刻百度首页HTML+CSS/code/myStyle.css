@@ -69,6 +69,7 @@ body {
     font-size: 16px;
 }
 .search-form .search-btn {
+    cursor: pointer;
     display: inline-block;
     position: absolute;
     width: 102px;
