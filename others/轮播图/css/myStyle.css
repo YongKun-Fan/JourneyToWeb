@@ -1,0 +1,63 @@
+body, div, ul, a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+.container {
+    border: 2px solid black;
+    position: relative;
+    margin: 0 auto;
+    width: 520px;
+    height: 280px;
+    top: 100px;
+    overflow: hidden;
+}
+.imgs {
+    position: absolute;
+    width: 3640px;
+    height: 280;
+    font-size: 0px;
+    left: -520px;
+}
+.list {
+    position: absolute;
+    bottom: 20px;
+    font-size: 0;
+    background: rgba(255,255,255,0.3);
+    border-radius: 7px;
+    /*居中*/
+    left: 50%;
+    margin-left: -35px;
+}
+.list li {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: rgb(95, 91, 91);
+    display: inline-block;
+    margin: 3px;
+    cursor: pointer;
+}
+.list .active {
+    background-color: orangered;
+}
+.btn {
+    display: none;
+    position: absolute;
+    width: 35px;
+    height: 30px;
+    top: 50%;
+    margin-top: -15px;
+    background-color: rgba(0,0,0,0.3);
+    color: rgb(255,255,255);
+    text-align: center;
+    line-height: 30px;
+    font-size: 20px;
+}
+#btn-left {
+    left: 0;
+}
+#btn-right {
+    right: 0;
+}

@@ -1,0 +1,78 @@
+div,ul,li {
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+.container {
+    /*border: 1px solid black;*/
+    width: 1200px;
+    margin: 20px auto;
+}
+.topBar-list {
+    height: 42px;
+    background-color: #808080;
+    position: relative;
+}
+.topBar-list li {
+    /*border: 1px solid red;*/
+    float: left; /*浮动会带来其他影响，需要清理*/
+    margin: 0 10px;
+}
+.clearfloat::after {  /*清理浮动*/
+    display: table;
+    content: "";
+    clear: both;
+}
+.topBar-list>li>a {
+    /*border: 1px solid blue;*/
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 12px;
+    color: #fff;
+    font-size: 18px;
+    border: 1px solid #808080;
+    text-align: center;
+    position: relative;
+    z-index: 1; /*层叠关系*/
+}
+.topBar-list>li>a:hover {
+    color: #bc0303;
+    background-color:#fff;
+    border: 1px solid #c9c9c9;
+}
+.item {
+    display: none;
+    position: absolute;   
+    width: 150px;
+    z-index: 9;
+    top: 40px;
+    background-color: #fff;
+}
+.item-list {
+    border: 1px solid #c9c9c9;
+    border-top: none;
+}
+.item-list li {
+    height: 40px;   
+}
+.item a {
+    color: #6e6e6e;
+    line-height: 40px;
+}
+.item a:hover {
+    text-decoration: underline;
+}
+.topBar-list .show .item {
+    display: block;
+}
+.show > .showa {
+    color: #bc0303;
+    background-color:#fff;
+    
+}
