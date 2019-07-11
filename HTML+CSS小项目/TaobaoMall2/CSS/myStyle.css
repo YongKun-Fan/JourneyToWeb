@@ -221,6 +221,7 @@
 }
 #nav li.line{
     margin: 0;
+    padding: 0;
 }
 #nav a:hover:before{
     content: '';
@@ -232,4 +233,176 @@
     top: -13px;
     left: 50%;
     margin-left: -11px;
+}
+
+/*首屏内容*/
+/*左边的内容*/
+/*侧边导航*/
+#firstScreen .firstLeft{
+    width: 890px;
+}
+.firstLeft .sideNav{
+    width: 190px;
+    height: 522px;
+    padding-top: 5px;
+    padding-bottom: 3px;
+    background-color: #fff;
+    border: 1px solid #ff5000;
+    border-top: none;
+    box-sizing: border-box;
+}
+.firstLeft .sideNav li{
+    height: 32px;
+    line-height: 32px;
+    font-size: 14px;
+    font-weight: 400;
+    padding-left: 25px;
+    color: #666;
+    transition: background-color 0.5s; /*过渡*/
+}
+.firstLeft .sideNav li span{
+    font-size: 12px;
+    padding-right: 5px;
+}
+.firstLeft .sideNav li:hover, .firstLeft .sideNav li:hover a{
+    background-color: #ffe4dc;
+    color: #f50;
+}
+.firstLeft .sideNav a:hover{
+    text-decoration: underline;
+}
+/*imgBox1*/
+.firstLeft .imgBox1{
+    width: 690px;
+    height: 282px;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+.firstLeft .pic{
+    position: relative;
+    width: 520px;
+}
+.firstLeft .pic button{
+    width: 20px;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    background-color: rgba(0,0,0,0.3);
+
+    position: absolute;
+    top: 50%;
+    margin-top: -15px;
+
+    visibility: hidden;
+}
+.firstLeft .pic button.btnRight{
+    right: 0;
+    text-align: right;
+    border-radius: 15px 0 0 15px;
+}
+.firstLeft .pic button.btnLeft{
+    text-align: left;
+    border-radius: 0 15px 15px 0;
+}
+.firstLeft .pic:hover button{
+    visibility: visible;
+}
+.firstLeft .pic button:hover{
+    background-color: rgba(0,0,0,0.4);
+}
+.firstLeft .imgBox1 .circle{
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    margin-left: -35px;
+    font-size: 0;
+    border-radius: 10px;
+    padding: 3px 0;
+    background-color: rgba(255,255,255,0.3);
+}
+.firstLeft .imgBox1 .circle span{
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin: 0 3px;
+    cursor: pointer;
+}
+.firstLeft .imgBox1 .circle span.active{
+    background-color: #ff5000;
+}
+.firstLeft .imgBox1 .ad{
+    width: 160px;
+}
+.firstLeft .imgBox1 .ad img{
+    width: 160px;
+}
+/*imgBox2*/
+.firstLeft .imgBox2{
+    width: 690px;
+    height: 230px;
+    margin-top: 10px;
+}
+.firstLeft .imgBox2 .picTitle{
+    height: 20px;
+}
+.firstLeft .imgBox2 .text{
+    width: 520px;
+    height: 17px;
+    margin-top: 10px;
+    line-height: 17px;
+}
+.firstLeft .imgBox2 .text .bg{
+    background: url(../imgs/天猫.png) no-repeat;
+    padding-left: 136px;
+    color: #666;
+}
+.firstLeft .imgBox2 .text i{
+    color: #ff1648;
+}
+.firstLeft .imgBox2 .picTitle .line{
+    height: 3px;
+    background-color: #ff1648;
+    position: relative;
+}
+.firstLeft .imgBox2 .picTitle .line span{
+    position: absolute;
+    left: 0;
+    width: 87px;
+    height: 3px;
+    background-color: #000;
+}
+.firstLeft .imgBox2 .img{
+    width: 520px;
+    height: 200px;
+    font-size: 0;
+    background-color: #fff;
+
+    /*垂直居中*/
+    display: table-cell;  
+    vertical-align: middle;
+}
+.firstLeft .imgBox2 .img img{
+    margin: 0 10px;
+}
+.firstLeft .imgBox2 .ad .title{
+    height: 20px;
+    line-height: 20px;
+}
+
+/*淘宝头条*/
+.firstLeft .news{
+    width: 890px;
+    height: 100px;
+    background-color: #999;
+}
+
+/*右边的内容*/
+#firstScreen .firstRight{
+    width: 290px;
+    height: 621px;
+    background-color: #9c9c9c;
 }
