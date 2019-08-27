@@ -54,6 +54,12 @@ button{
 .c5{
     color: #f50;
 }
+.c6{
+    color: #8d7afb;
+}
+.c7{
+    color: #a8c001;
+}
 .mt10{
     margin-top: 10px;
 }
@@ -65,4 +71,10 @@ button{
 }
 .mr10{
     margin-right: 10px;
+}
+table{
+    border-collapse: collapse; /*边框模式，合并的模式*/
+}
+th,td{
+    padding: 0;
 }

@@ -388,6 +388,9 @@
 .firstLeft .imgBox2 .img img{
     margin: 0 10px;
 }
+.firstLeft .imgBox2 .ad{
+    margin-top: 10px;
+}
 .firstLeft .imgBox2 .ad .title{
     height: 20px;
     line-height: 20px;
@@ -397,12 +400,430 @@
 .firstLeft .news{
     width: 890px;
     height: 100px;
-    background-color: #999;
+    background-color: #fff;
+    margin-top: 10px;
+    box-sizing: border-box;
+    padding: 13px 13px 13px 20px;
+}
+.firstLeft .news .hd{
+    margin-top: 13px;
+}
+.firstLeft .news .hd h3{
+    width: 129px;
+    height: 26px;
+    background: url(../imgs/淘宝头条.png) no-repeat;
+    text-indent: -99999px;
+    overflow: hidden;
+}
+.firstLeft .news .hd p{
+    color: #999;
+    line-height: 24px;
+}
+.firstLeft .news .newList{
+    width: 680px;
+    position: relative;
+}
+.firstLeft .news .newList .img{
+    margin-right: 15px;
+}
+.firstLeft .news .newList .img img{
+    width: 130px;
+    height: 73px;
+}
+.firstLeft .news .newList h4{
+    line-height: 28px;
+    font-size: 16px;
+    font-weight: normal;
+}
+.firstLeft .news .newList h4 a{
+    color: #333;
+}
+.firstLeft .news .newList h4 a:hover{
+    color: #ff5000;
+}
+.firstLeft .news .newList p{
+    line-height: 18px;
+    font-size: 14px;
+}
+.firstLeft .news .newList p a{
+    color: #999;
+}
+.firstLeft .news .newList .more{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    color: #999;
+}
+.firstLeft .news .newList .more:hover{
+    color: #ff5000;
 }
 
 /*右边的内容*/
 #firstScreen .firstRight{
     width: 290px;
-    height: 621px;
+    margin-top: 10px;
     background-color: #9c9c9c;
+}
+/*用户*/
+.firstRight .user{
+    height: 140px;
+    padding-top: 5px;
+    background: url(../imgs/part1-bg.png);
+}
+.firstRight .user .headImg{
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.firstRight .user .headImg img{
+    width: 50px;
+    height: 50px;
+}
+.firstRight .user .userName{
+    text-align: center;
+    line-height: 16px;
+}
+.firstRight .user .members{
+    text-align: center; 
+    font-size: 0; 
+}
+.firstRight .user .members a{
+    display: inline-block;
+    font-size: 12px;
+    border-radius: 9px;
+    padding: 0 10px 0 20px;
+    margin: 0 2px;
+}
+.firstRight .user .members a.gold{
+    background: #ffe4dc url(../imgs/icoimg.png) 0 -572px no-repeat;
+}
+.firstRight .user .members a.club{
+    background: #ffe4dc url(../imgs/icoimg.png) 0 -528px no-repeat;
+}
+.firstRight .user .buttons{
+    text-align: center;
+}
+.firstRight .user .buttons a{
+    display: inline-block;
+    width: 75px;
+    height: 25px;
+    line-height: 25px;
+    margin: 12px 2px 0 2px;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: bold;
+    background-image: linear-gradient(to right,#ff9000,#ff5000);
+}   
+.firstRight .user .buttons a.login{
+    width: 92px;
+} 
+/*举报*/
+.firstRight .tipOff{
+    display: block;
+    height: 26px;
+    line-height: 26px;
+    color: #f40;
+    background-color: #ffe4dc;
+    text-align: center;
+    font-size: 0;
+}
+.firstRight .tipOff span{
+    font-size: 12px;
+}
+.firstRight .tipOff i{
+    font-size: 12px;
+    vertical-align: -1px;
+    position: relative;
+    left: 30px;
+}
+/*公告区*/
+.firstRight .notice{
+    height: 108px;
+    background-color: #fff;
+}
+.firstRight .notice .title{
+    text-align: center;
+    font-size: 0;
+    padding-top: 10px;
+}
+.firstRight .notice .title li{
+    display: inline-block;
+    font-size: 12px;
+    line-height: 20px;
+    padding: 0 4px;
+    margin: 0 10px;
+}
+.firstRight .notice .title li.active{
+    font-weight: bold;
+    border-bottom: 2px solid #f40;
+}
+.firstRight .notice .title a:hover{
+    color: #f40;
+}
+.firstRight .notice .content{
+    margin: 0 12px;
+    padding-top: 10px;
+}
+.firstRight .notice .content li{
+    height: 25px;
+    line-height: 25px;
+    float: left;
+    width: 130px;
+    overflow: hidden;
+}
+.firstRight .notice .content li.item{
+    width: 100%;
+}
+.firstRight .notice .content li.item a{
+    color: #ff5000;
+}
+.firstRight .notice .content li a:hover{
+    color: #ff5000;
+}
+/*图标区域*/
+.firstRight .icons{
+    width: 100%;
+    height: 231px;
+    background-color: #fff;
+    table-layout: fixed; /*根据宽度自动计算列宽*/
+}
+.firstRight .icons td{
+    border: 1px solid #f4f4f4;
+    text-align: center;
+}
+.firstRight .icons td span{
+    line-height: 34px;
+    color: #333;
+}
+.firstRight .icons td i{
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin: 0 auto;
+    background: url(../imgs/icoimg.png) no-repeat;
+}
+.firstRight .icons .item1 i{
+    background-position: 0 0;
+}
+.firstRight .icons .item2 i{
+    background-position: 0 -87px;
+}
+.firstRight .icons .item3 i{
+    background-position: 0 -44px;
+}
+.firstRight .icons .item4 i{
+    background-position: 0 -132px;
+}
+.firstRight .icons .item5 i{
+    background-position: 0 -176px;
+}
+.firstRight .icons .item6 i{
+    background-position: 0 -220px;
+}
+.firstRight .icons .item7 i{
+    background-position: 0 -264px;
+}
+.firstRight .icons .item8 i{
+    background-position: 0 -308px;
+}
+.firstRight .icons .item9 i{
+    background-position: 0 -352px;
+}
+.firstRight .icons .item10 i{
+    background-position: 0 -396px;
+}
+.firstRight .icons .item11 i{
+    background-position: 0 -440px;
+}
+.firstRight .icons .item12 i{
+    background-position: 0 -484px;
+}
+/*APP*/
+.firstRight .app{
+    height: 111px;
+    background-color: #fff;
+}
+.firstRight .app{
+    height: 30px;
+    line-height: 30px;
+}
+.firstRight .app h3{
+    font-size: 14px;
+    padding-left: 14px;
+}
+.firstRight .app a{
+    margin-right: 10px;
+}
+.firstRight .app a:hover{
+    color: #f40;
+}
+.firstRight .app ul{
+    text-align: center;
+    font-size: 0;
+    background-color: #fff;
+}
+.firstRight .app ul img{
+    width: 32px;
+    height: 32px;
+}
+.firstRight .app li{
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    margin: 0 10px 8px 10px; 
+}
+/*有好货与爱逛街*/
+/*有好货*/
+.goods{
+    width: 590px;
+    height: 658px;
+    background-color: #fff;
+}
+.goods .head{
+    height: 24px;
+    line-height: 24px;
+    margin: 20px 0;
+    padding: 0 20px; 
+}
+.goods .head h3{
+    font-size: 0;
+    font-weight: normal;
+}
+.goods .head h3 img{
+    height: 24px;
+}
+.goods .head h3 span{
+    vertical-align: middle;
+    color: #ccc;
+    font-size: 20px;
+    margin: 0 5px;
+}
+.goods .head h3 i{
+    font-size: 12px;
+    vertical-align: middle;
+    color: #999;
+}
+.goods .head .change{
+    color: #999;
+}
+.goods .list{
+    font-size: 0;
+    text-align: center;
+}
+.goods .list li{
+    display: inline-block;
+    width: 180px;
+    margin: 0 2px 35px 2px;
+    text-align: left;
+}
+.goods .list li img{
+    width: 180px;
+    height: 180px;
+}
+.goods .list li h4{
+    font-size: 16px;
+    height: 28px;
+    line-height: 28px;
+    font-weight: normal;
+}
+.goods .list li:hover h4 a{
+    color: #f40;
+}
+.goods .list li p{
+    height: 24px;
+    line-height: 24px;
+    font-size: 14px;
+    overflow: hidden;
+}
+.goods .list li .comment{
+    display: block;
+    height: 22px;
+    line-height: 22px;
+    font-size: 12px;
+    color: #35b1ff;
+    margin-top: 12px;
+}
+.goods .list li .comment span{
+    font-size: 14px;
+    margin-right: 14px;
+}
+/*爱逛街*/
+.shopping .head i{
+    margin-left: 10px;
+}
+.shopping .list li p{
+    height: 44px;
+    line-height: 22px;
+    font-size: 14px;
+    overflow: hidden;
+    margin-top: 11px;
+}
+.shopping .list li p a{
+    cursor: pointer;
+}
+.shopping .list li:hover p a{
+    color: #f40;
+}
+.shopping .list li p span{
+    font-size: 14px;
+    color: #ebebeb;
+    position: relative;
+    top: -5px;
+}
+.shopping .list li .comment img{
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+}
+.shopping .list li .comment i{
+    color: #999;
+}
+/*右侧固定导航*/
+.tool{
+    width: 50px;
+    height: 400px;
+    position: fixed;
+    top: 180px;
+    right: 1%;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 0 0 10px 10px;
+}
+.tool span img{
+    width: 35px;
+    height: 35px;
+}
+.tool span{
+    width: 50px;
+    height: 35px;
+    position: absolute;
+    top: -28px;
+    right: 0;
+}
+.tool .btn a{
+    display: block;
+    width: 34px;
+    height: 44px;
+    line-height: 22px;
+    padding: 6px 8px;
+    cursor: pointer;
+    border-bottom: 1px solid #efefef;
+}
+.tool .btn a.feedback{
+    line-height: 44px;
+}
+.tool .btn a.first{
+    border-radius: 10px 10px 0 0;
+}
+.tool .btn a.last{
+    border-radius: 0 0 10px 10px;
+    overflow: hidden;
+}
+.tool .btn a.active,.tool .btn a:hover{
+    background-image: linear-gradient(135deg,#ff9000,#ff5000);
+    color: #fff;
+    font-weight: bold;
 }
