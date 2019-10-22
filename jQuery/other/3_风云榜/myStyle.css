@@ -1,0 +1,39 @@
+body, ul, h3{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    margin-left: 5px;
+}
+li {
+    list-style: none;
+}
+div.container{
+    border: 1px solid #ccc;
+    margin-top: 40px;
+    margin-left: 40px;
+    width: 200px;
+}
+div.container span{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    line-height: 12px;
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+    background-color: rgb(130, 184, 130);
+    font-size: 12px;
+    font-weight: bold;
+    margin: 5px;
+    cursor: pointer;
+}
+div.container h3{
+    display: inline-block;
+}
+.subMenu{
+    display: none;
+}
+li.active ul{
+    display: block;
+}

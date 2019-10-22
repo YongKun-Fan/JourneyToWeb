@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>错误消息容器</title>
+    <link rel="stylesheet" href="./myStyle.css">
+    <script src="https://static.runoob.com/assets/jquery-validation-1.14.0/lib/jquery.js"></script>
+    <script src="https://static.runoob.com/assets/jquery-validation-1.14.0/dist/jquery.validate.min.js"></script>
+    <script src="https://static.runoob.com/assets/jquery-validation-1.14.0/dist/localization/messages_zh.js"></script>
+</head>
+
+<body>
+    <h1 id="banner"><a href="http://jqueryvalidation.org/">jQuery Validation Plugin</a></h1>
+    <div id="main">
+        <form id="form1" class="cmxform" method="get" action novalidate="novalidate">
+            <fieldset>
+                <legend>Login Form</legend>
+                <p>
+                    <label>Username</label>
+                    <input type="text" name="user" title="Please enter your usrname (at least 3 characters)"
+                        minlength="3" required>
+                </p>
+                <p>
+                    <label>Password</label>
+                    <input type="password" name="password" class="error"
+                        title="Please enter your password, between 5 and 12 characters" minlength="5" maxlength="12" required>
+                </p>
+                <div class="error"></div>
+                <p style="margin-left: 60px;">
+                    <input type="submit" class="submit" value="Login">
+                </p>
+            </fieldset>
+        </form>
+        <div class="container">
+            <h4>There are serious errors in your form submission, please see below for details</h4>
+            <ol></ol>
+        </div>
+        <form id="form2" class="cmxform" method="get" action novalidate="novalidate">
+            <fieldset>
+                <legend>Validating a complete form</legend>
+                <p>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" title="Please enter your email address" required>
+                </p>
+                <p>
+                    <label for="color">Favorite Color</label>
+                    <select name="color" id="color" title="Please select your favorite color" required>
+                        <option value=""></option>
+                        <option value="1">Red</option>
+                        <option value="2">Blue</option>
+                        <option value="3">Yellow</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="phone">Phone</label>
+                    <input type="number" id="phone" name="name" rangelength="[2,8]" title="Please enter your phone number" required>
+                </p>
+                <p>
+                    <label for="address">Adress</label>
+                    <input type="text" id="address" name="address" title="Please enter your address" required>
+                </p>
+                <p>
+                    <label for="headphoto">Headphoto</label>
+                    <input type="file" id="headphoto">
+                </p>
+                <p>
+                    <label for="agree">Please agree to our policy</label>
+                    <input type="checkbox" id="agree" name="agree" class="checkbox" title="Please agree to our policy" required>
+                </p>
+                <p style="margin-left: 60px;">
+                    <input type="submit" class="submit" value="Submit">
+                    <input type="submit" class="cancel" value="Cancel">
+                </p>
+            </fieldset>
+        </form>
+    </div>
+</body>
+<script src="./myJs.js"></script>
+</html>

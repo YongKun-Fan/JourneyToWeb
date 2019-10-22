@@ -1,0 +1,54 @@
+body, h1, p{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+#banner{
+    padding: 15px;
+    font-size: large;
+    text-align: center;
+    background: url(./img/bg.gif);
+}
+h1 a{
+    color: white;
+}
+#main{
+    padding: 1em;
+}
+form.cmxform{
+    width: 30em;
+    margin: 0 auto;
+}
+fieldset{
+    padding: 0;
+    margin: 0 0 10px 0;
+    border: none;
+    border-top: 1px solid #c9dca6;
+    background: url(./img/cmxform-fieldset.gif) left bottom repeat-x;
+}
+fieldset p{
+    padding: 5px 10px 7px;
+    background: url(./img/cmxform-divider.gif) left bottom repeat-x;
+}
+fieldset label{
+    display: inline-block;
+    margin-left: 50px;
+}
+div.container{
+    display: none;
+    margin: 0 auto;
+    width: 700px;
+    border: 1px solid red;
+}
+div.container h4{
+    text-align: center;
+}
+.error{
+    color: red;
+    margin: 0;
+}
+div.container ol{
+    padding-left: 30%;
+}

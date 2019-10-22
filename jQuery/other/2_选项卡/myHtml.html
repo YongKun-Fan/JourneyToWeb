@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>选项卡</title>
+        <link rel="stylesheet" href="./myStyle.css">
+    </head>
+    <body>
+        <div class="table">
+            <ul>
+                <li class="active">国内新闻</li>
+                <li>国际新闻</li>
+                <li>体育新闻</li>
+                <li class="last">娱乐新闻</li>
+            </ul>
+            <div class="tab-content">
+                <div class="china-news">
+                    <fieldset>
+                        <legend>菜单</legend>
+                        姓名：<input type="text"><br><br>
+                        性别：<input type="radio" name="sex" id="male"><label for="male">男</label>
+                        <input type="radio" name="sex" id="female"><label for="female">女</label>
+                        <input type="radio" name="sex" id="secret"><label for="secret">保密</label><br><br>
+                        <input type="checkbox" id="agree"><label for="agree">我同意协议</label><br><br>
+                        <input type="button" value="上一步">
+                        <input type="button" id="next" value="下一步" disabled="true">
+                    </fieldset>
+                </div>
+                <div class="international-news">
+                    国际新闻
+                </div>
+                <div class="sports-news">
+                    体育新闻
+                </div>
+                <div class="entertainment-news">
+                    娱乐新闻
+                </div>
+            </div>
+        </div>
+        <script src="F:/Games/Web前端/JourneyToWeb/jQuery/jquery-1.12.4.js"></script>
+        <script src="./myJs.js"></script>
+    </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>UI事件</title>
+        <link rel="stylesheet" href="./myStyle.css">
+    </head>
+    <body>
+        <h3>UI事件</h3>
+        <section>
+        一、unload事件<br>
+        具体来说，当发生以下情况时，会触发unload事件：<br>
+        <ol>
+            <li>点击某个离开页面的<a href="http://www.baidu.com">链接；</a></li>
+            <li>在地址栏键入新的URL；</li>
+            <li>使用前进或后退按钮；</li>
+            <li>关闭浏览器；</li>
+            <li>重新加载页面。</li>
+        </ol>
+        <span>注意：unload事件在jQuery 1.8中被废弃，3.0版移除，Firefox与Chrome会阻止弹窗，所以看不到效果。</span>
+        </section>
+        <section>
+        二、scroll事件<br>
+        当用户滚动指定的元素时，会触发scroll事件：<br>
+        scroll事件适用于所有可滚动的元素和window对象。
+        <div>0</div>
+        </section>
+        <section>
+        三、resize事件<br>
+        当调整浏览器窗口大小时，会触发resize事件
+        </section>
+        <section>
+        四、select事件<br>
+        当textarea或文本类型的input元素中的文本被选择时，会触发select事件<br>
+        <input type="text"><br>
+        <textarea name="" id="" cols="100" rows="10"></textarea>
+        </section>
+        <script src="F:/Games/Web前端/JourneyToWeb/jQuery/jquery-1.12.4.js"></script>
+        <script src="./myJs.js"></script>
+    </body>
+</html>

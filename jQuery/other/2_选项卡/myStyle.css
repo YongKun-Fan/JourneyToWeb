@@ -1,0 +1,43 @@
+body, ul{
+    margin: 0;
+    padding: 0;
+}
+div.table{
+    width: 899px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+}
+div.table ul{
+    height: 40px;
+    line-height: 40px;
+    font-size: 0;
+}
+div.table ul li{
+    list-style: none;
+    display: inline-block;
+    width: 224px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #c0dcc0;
+    font-size: 16px;
+    margin-right: 1px;
+    cursor: pointer;
+}
+div.table ul li.last{
+    margin-right: 0;
+}
+.table ul li.active{
+    background-color: #9baf9b;
+}
+.tab-content div{
+    display: none;
+    height: 500px;
+}
+.tab-content div.china-news{
+    display: block;
+    height: 460px;
+}
+.china-news{
+    padding: 20px;
+}

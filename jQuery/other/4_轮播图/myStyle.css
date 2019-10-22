@@ -1,0 +1,68 @@
+body, ul{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+    display: inline-block;
+}
+a{
+    text-decoration: none;
+}
+img{
+    width: 400px;
+    height: 307px;
+}
+#container{
+    position: relative;
+    width: 400px;
+    height: 307px;
+    margin: 40px auto;
+    margin-bottom: 10px;
+    border: 1px solid grey;
+    overflow: hidden;
+}
+#imgs{
+    position: absolute;
+    width: 2800px;
+    height: 307px;
+    font-size: 0;
+}
+#arrowLeft{
+    position: absolute;
+    left: 465px;
+    top: 167px;
+    width: 52px;
+    height: 52px;
+    cursor: pointer;
+    background: url(./imgs/arr.png) no-repeat left;
+}
+#arrowRight{
+    position: absolute;
+    right: 465px;
+    top: 167px;
+    width: 52px;
+    height: 52px;
+    cursor: pointer;
+    background: url(./imgs/arr.png) no-repeat right;
+}
+#circlesContainer{
+    width: 400px;
+    margin: 0 auto;
+}
+#circles{
+    height: 13px;
+    text-align: center;
+}
+#circles li{
+    width: 13px;
+    height: 100%;
+    padding: 0 5px;
+    cursor: pointer;
+    text-indent: -9999px;
+    background: url(./imgs/00.png) no-repeat top;
+}
+#circles li.active{
+    background: url(./imgs/00.png) no-repeat bottom;
+}
+
